@@ -7,7 +7,7 @@
 
 n_chisel = input("Введите количество целых чисел: ")
 while not n_chisel.isdigit():
-    n_chisel = input(f"Ошибка!!! Введено некорректное значение: {n_chisel}\n 'Попробуйте еще раз: ' ")
+    n_chisel = input(f"Ошибка!!! Введено некорректное значение: {n_chisel}\nПопробуйте еще раз:  ")
     continue
 n_chisel = int(n_chisel)
 
