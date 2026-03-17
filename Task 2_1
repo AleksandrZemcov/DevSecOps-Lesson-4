@@ -1,0 +1,21 @@
+
+
+n_chisel = input("Введите количество целых чисел: ")
+while not n_chisel.isdigit():
+    n_chisel = input(f"Ошибка!!! Введено некорректное значение: {n_chisel}\nПопробуйте еще раз: ")
+n_chisel = int(n_chisel)
+
+a = 0  # количествово отрицательных чисел
+b = 0  # количество положительных чисел
+c = 0  # количество нулей
+
+for _ in range(n_chisel):
+    num = input(f"Введите число № {_ + 1}: ")
+    num = int(num)
+
+    if num > 0:
+        a += 1
+    if num < 0:
+        b += 1
+    if num == 0:
+        c += 1
